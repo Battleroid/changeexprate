@@ -1,0 +1,17 @@
+name: Changeexprate
+version: ${project.version}
+main: com.caseyweed.changeexprate.Changeexprate
+api-version: 1.13
+description: Modify the experience Minecraft vanilla experience rate
+prefix: ChangeExpRate
+
+commands:
+  exprate:
+    description: Change the experience gain rate, reset to vanilla or display current rate. Accepts integers only.
+    usage: "Usage: /<command> [n|reset]"
+    permission: exprate
+
+permissions:
+  exprate:
+    default: "op"
+    description: "Allows modification of the experience rate"
